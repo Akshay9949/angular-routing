@@ -1,0 +1,19 @@
+nav a.active{
+    color: blue;
+}
+button{
+    color:black;
+    font-size: large;
+}
+h1{
+    color:red;
+}
+li{
+    font-weight: bold;
+    color: purple;
+}
+input {
+    height: 2em;
+    font-size: 1em;
+    padding-left: .4em;
+  }

@@ -1,0 +1,29 @@
+<div style="text-align: center;">
+<h1>Routing Demo</h1>
+</div>
+<nav>
+    <button><h3><a routerLink='/departments' routerLinkActive="active">Departments</a></h3></button>
+    <button><h3><a routerLink='/employees' routerLinkActive="active"> Employees</a></h3></button>
+</nav>
+<router-outlet></router-outlet>
+<br>
+<br>
+<!-- To do list -->
+<div>
+    <h1>To Do list</h1>
+</div>
+<div class="container">
+    <!-- task is defined in the app.componenet.ts file-->
+    <input  type="text" placeholder="Enter the task" [(ngModel)]='task'>     
+    <button (click)='addtask()'>Add Task</button>
+    <div>
+        <ul>
+            <li *ngFor='let item of list'>
+                <input type="checkbox" >{{item.value}}
+                <button (click)="deltask(item.id)">Delete</button>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
